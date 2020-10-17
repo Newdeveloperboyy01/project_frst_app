@@ -26,8 +26,19 @@ class _MyAppState extends State<MyApp> {
         ),
         body: Column(
           children: <Widget>[
-            Image.asset("assets/images/laptop.jpg",
+            Container(
+              child: Image.asset('assets/images/laptop.jpg',
+                height: 250,
+                width: 500,
+                fit: BoxFit.cover,
+              ),
             ),
+            Container(
+              alignment: Alignment.center,
+              margin: EdgeInsets.only( top: 10),
+              child: Text('Fork hacktoberfest-2020',
+                style: TextStyle(color: Colors.black, fontSize: 16, fontWeight: FontWeight.bold)),
+            )
           ],
         ),
       ),
